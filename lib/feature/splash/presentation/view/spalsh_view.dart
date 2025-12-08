@@ -1,4 +1,6 @@
-import 'package:flutter/material.dart';
+
+
+import '../../../../quick_chat.dart';
 
 class SpalshView extends StatelessWidget {
   const SpalshView({super.key});
@@ -6,11 +8,10 @@ class SpalshView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Text(
-          'Splash Screen',
-          style: Theme.of(context).textTheme.headlineMedium,
-        ),
+      body: AnimatedSplashScreen(
+        splash: Image.asset('assets/images/logo.png'),
+        nextScreen: LoginScreen(),
+        backgroundColor: Colors.white,
       ),
     );
   }
