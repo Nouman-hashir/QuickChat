@@ -30,7 +30,7 @@ class _CustomPhoneTextFieldState extends State<CustomPhoneTextField> {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 5),
       child: Container(
-        height: 64, // Sufficient height for floating label + text content
+        height: 64,
         alignment: Alignment.center,
         child: TextField(
           focusNode: _focusNode,
