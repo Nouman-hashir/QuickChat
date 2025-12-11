@@ -19,6 +19,11 @@ class AppRouter {
         name: Routes.detail.name,
         builder: (context, state) => const DetailsScreen(),
       ),
+      GoRoute(
+        path: '/home',
+        name: Routes.home.name, 
+        builder: (context, state) => const HomeScreen(),
+      ),
     ]
   );
 }
