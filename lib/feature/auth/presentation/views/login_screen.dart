@@ -102,6 +102,7 @@ class _LoginScreenState extends State<LoginScreen>
                               icon: Icons.verified_outlined,
                               text: "Verify",
                               onPressed: () {
+                               context.pushNamed(Routes.detail.name);
                               },
                             ),
                             SizedBox(height: 30),

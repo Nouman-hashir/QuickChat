@@ -4,12 +4,14 @@ class CustomPhoneTextField extends StatefulWidget {
   final TextEditingController controller;
   final String hint;
   final String labelText;
+  final IconData? icon;
 
   const CustomPhoneTextField({
     super.key,
     required this.controller,
     this.hint = "+43 123-456-7890",
     this.labelText = "Phone Number",
+    this.icon = Icons.call,
   });
 
   @override
@@ -44,11 +46,7 @@ class _CustomPhoneTextFieldState extends State<CustomPhoneTextField> {
             isDense: false,
             labelText: widget.labelText,
             floatingLabelBehavior: FloatingLabelBehavior.auto,
-            prefixIcon: Icon(Icons.phone_outlined, color: Colors.grey.shade600),
-            // prefixIconConstraints: const BoxConstraints(
-            //   minWidth: 48,
-            //   minHeight: 48,
-            // ),
+            prefixIcon: Icon(widget.icon, color: Colors.grey.shade600),
             contentPadding: const EdgeInsets.fromLTRB(16, 30, 16, 22),
             border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
             enabledBorder: OutlineInputBorder(
