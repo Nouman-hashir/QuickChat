@@ -31,7 +31,7 @@ class HomeScreen extends StatelessWidget {
         "name": "Thomas adison",
         "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
         "time": "10 min",
-        "unreadCount": 2,
+        "unreadCount": 1,
         "imageUrl": "assets/images/profile2.png",
       },
       {
@@ -67,6 +67,9 @@ class HomeScreen extends StatelessWidget {
               itemBuilder: (context, index) {
                 final chat = chatList[index];
                 return ChatTile(
+                  onTap: () {
+                    context.goNamed(Routes.chat.name);
+                  },
                   name: chat["name"],
                   message: chat["message"],
                   time: chat["time"],
