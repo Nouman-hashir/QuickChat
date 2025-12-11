@@ -84,7 +84,9 @@ class DetailsScreen extends StatelessWidget {
                 CustomLoginButton(
                   icon: Icons.fast_forward_outlined,
                   text: "Next",
-                  onPressed: () {},
+                  onPressed: () {
+                    context.goNamed(Routes.home.name);
+                  },
                 ),
               ],
             ),

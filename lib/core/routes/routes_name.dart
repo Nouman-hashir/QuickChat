@@ -1,5 +1,6 @@
 enum Routes {
   login,
-  detail
+  detail,
+  home,
 
 }
