@@ -8,7 +8,6 @@ class DetailsScreen extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          /// BACKGROUND
           Positioned(
             top: 0,
             left: 0,
@@ -19,8 +18,6 @@ class DetailsScreen extends StatelessWidget {
               height: 350,
             ),
           ),
-
-          /// PROFILE IMAGE
           Positioned(
             top: 290,
             left: 0,

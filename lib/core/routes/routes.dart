@@ -24,6 +24,11 @@ class AppRouter {
         name: Routes.home.name, 
         builder: (context, state) => const HomeScreen(),
       ),
+      GoRoute(
+        path: '/chat',
+        name: Routes.chat.name,
+        builder: (context, state) => const ChatScreen(),
+      ),
     ]
   );
 }
